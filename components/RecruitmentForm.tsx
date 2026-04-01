@@ -51,7 +51,7 @@ const FormField = ({
       <textarea
         name={name}
         placeholder={placeholder}
-        value={value}
+        value={value || ''}
         onChange={onChange}
         className={`w-full px-4 py-3 bg-gray-700 border rounded-lg text-white placeholder-gray-500 focus:outline-none ${
           fieldError ? 'border-red-500' : 'border-gray-600 focus:border-orange-500'
