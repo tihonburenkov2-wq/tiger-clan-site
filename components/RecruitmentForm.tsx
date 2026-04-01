@@ -30,6 +30,8 @@ interface FormFieldProps {
   value: any
   onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => void
   error?: string | null
+  min?: string
+  step?: string
 }
 
 const FormField = ({
