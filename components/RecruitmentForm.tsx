@@ -26,8 +26,8 @@ interface FormFieldProps {
   type?: string
   placeholder?: string
   required?: boolean
-  options?: Array<{ value: string | number | boolean; label: string }> | null
-  value: string | number | boolean
+  options?: Array<{ value: any; label: string }> | null
+  value: any
   onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => void
   error?: string | null
 }
